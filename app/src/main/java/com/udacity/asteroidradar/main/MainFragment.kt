@@ -47,6 +47,9 @@ class MainFragment : Fragment() {
                 .load(it.url,)
                 .error(R.mipmap.ic_launcher)
                 .into(binding.activityMainImageOfTheDay,)
+
+            binding.activityMainImageOfTheDay.contentDescription = "image of the day ".plus(it.title)
+
         }
     })
 
