@@ -22,6 +22,7 @@ class AsteroidRadarApp : Application() {
                 .setRequiredNetworkType(NetworkType.UNMETERED)
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .setRequiresCharging(true)
+                .setRequiresBatteryNotLow(true)
                 .build()
 
             val repeatRequest = PeriodicWorkRequestBuilder<WeeklyWorker>(
